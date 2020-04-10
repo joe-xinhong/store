@@ -1,21 +1,25 @@
 <template>
     <div>
         <div v-if="kk==1">
-            11111
+            <GoodList :goodId="1"></GoodList>
         </div>
-        <div v-if="kk==2">
-            22222
+        <div v-else-if="kk==2">
+            <GoodList :goodId="2"></GoodList>
         </div>
-        <div v-if="kk==3">
+        <div v-else-if="kk==3">
             33333
         </div>
-        <div v-if="kk==4">
+        <div v-else-if="kk==4">
             44444
+        </div>
+        <div v-else>
+            <GoodList :goodId="0"></GoodList>
         </div>
     </div>
 </template>
 <script type="text/javascript" >
     import Msg from './Msg.js'
+    import GoodList from './GoodList'
     export default {
         data(){
           return {
@@ -28,6 +32,9 @@
             Msg.$on("val",function (m) {
                 _this.kk = m;
             })
+        },
+        components: {
+            GoodList
         }
     }
 </script>
