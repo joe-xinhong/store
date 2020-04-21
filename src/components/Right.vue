@@ -7,10 +7,19 @@
             <GoodList :goodId="2"></GoodList>
         </div>
         <div v-else-if="kk==3">
-            33333
+            <GoodList :goodId="3"></GoodList>
         </div>
         <div v-else-if="kk==4">
-            44444
+            <GoodList :goodId="4"></GoodList>
+        </div>
+        <div v-else-if="kk==5">
+            <GoodList :goodId="5"></GoodList>
+        </div>
+        <div v-else-if="kk==6">
+            <GoodList :goodId="6"></GoodList>
+        </div>
+        <div v-else-if="kk==7">
+            <GoodList :goodId="7"></GoodList>
         </div>
         <div v-else>
             <GoodList :goodId="0"></GoodList>

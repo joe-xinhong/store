@@ -6,9 +6,9 @@
             <li @click="menu2">坦克</li>
             <li @click="menu3">战士</li>
             <li @click="menu4">刺客</li>
-            <li>法师</li>
-            <li>射手</li>
-            <li>辅助</li>
+            <li @click="menu5">法师</li>
+            <li @click="menu6">射手</li>
+            <li @click="menu7">辅助</li>
         </ul>
     </div>
 </template>
@@ -42,6 +42,15 @@
             },
             menu4:function () {
                 Msg.$emit("val","4");
+            },
+            menu5:function () {
+                Msg.$emit("val","5");
+            },
+            menu6:function () {
+                Msg.$emit("val","6");
+            },
+            menu7:function () {
+                Msg.$emit("val","7");
             }
         }
     }

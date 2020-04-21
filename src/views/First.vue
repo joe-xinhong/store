@@ -5,7 +5,7 @@
         </div>
         <div class="right">
             <div class="top">
-                <img src="http://ossweb-img%2Eqq%2Ecom/upload/webplat/info/yxzj/20200408/96961325570770%2Ejpg"/>
+                <img src="https://att.cocservice.top/img/top_pic/top_pic3_md.jpg"/>
             </div>
             <div class="bottom">
                 <Right></Right>
@@ -49,6 +49,5 @@
     }
     .left,.right{
         background-color: #f5f5f5;
-        height: 500px;
     }
 </style>
